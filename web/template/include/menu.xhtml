@@ -26,6 +26,12 @@
                                 <h:commandLink styleClass="nav-link" action="#{navigationBean.modulepage('KayitOl')}" value=" Kullanıcı Kaydı ||" rendered="#{!kgc.icerde}"/>
                             </li>
                             <li class="nav-item active">
+                                <h:commandLink styleClass="nav-link" action="#{navigationBean.adminpage('UrunlerAdmin')}" value=" Ürün Ekle-Sil-Güncelle ||" rendered="#{kgc.icerde and kgc.adminmi}"/>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink styleClass="nav-link" action="#{navigationBean.adminpage('KullaniciIslemleri')}" value=" Kullanıcı İşlemleri ||" rendered="#{kgc.icerde and kgc.adminmi}"/>
+                            </li>
+                            <li class="nav-item active">
                                 <h:commandLink styleClass="nav-link" action="#{navigationBean.modulepage('CikisYap')}" value=" Çıkış Yap" rendered="#{kgc.icerde}"/>
                             </li>
                             <li class="nav-item active">
