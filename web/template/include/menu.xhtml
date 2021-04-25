@@ -32,6 +32,9 @@
                                 <h:commandLink styleClass="nav-link" action="#{navigationBean.adminpage('KullaniciIslemleri')}" value=" Kullanıcı İşlemleri ||" rendered="#{kgc.icerde and kgc.adminmi}"/>
                             </li>
                             <li class="nav-item active">
+                                <h:commandLink styleClass="nav-link" action="#{navigationBean.adminpage('DosyaIslemleri')}" value=" Dosya İşlemleri ||" rendered="#{kgc.icerde and kgc.adminmi}"/>
+                            </li>
+                            <li class="nav-item active">
                                 <h:commandLink styleClass="nav-link" action="#{navigationBean.modulepage('CikisYap')}" value=" Çıkış Yap" rendered="#{kgc.icerde}"/>
                             </li>
                             <li class="nav-item active">
