@@ -17,6 +17,15 @@
                                 <h:commandLink styleClass="nav-link" action="#{navigationBean.secretpage('Secret')}" value="Anasayfa ||" rendered="#{kgc.icerde and !kgc.adminmi}"/>
                             </li>
                             <li class="nav-item active">
+                                <h:commandLink styleClass="nav-link" action="#{navigationBean.secretpage('GiysilerSecret')}" value="Giysiler ||" rendered="#{kgc.icerde and !kgc.adminmi}"/>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink styleClass="nav-link" action="#{navigationBean.secretpage('Sepetim')}" value="Sepetim ||" rendered="#{kgc.icerde and !kgc.adminmi}"/>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink styleClass="nav-link" action="#{navigationBean.secretpage('BilgiGuncelle')}" value="Bilgi Güncelle ||" rendered="#{kgc.icerde and !kgc.adminmi}"/>
+                            </li>
+                            <li class="nav-item active">
                                 <h:commandLink styleClass="nav-link" action="#{navigationBean.adminpage('Admin')}" value="Anasayfa ||" rendered="#{kgc.icerde and kgc.adminmi}"/>
                             </li>
                             <li class="nav-item active">

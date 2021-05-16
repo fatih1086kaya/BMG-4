@@ -22,7 +22,7 @@ public class UrunlerDao {
 private Connection c;
 private RenklerDao renkdao;
 private BedenlerDao bedendao;
-//private PhotosDao phdao;
+private PhotosDao phdao;
 private KategoriDao katdao;
 List<Urunler> urunlist;
     public List<Urunler> getUrunLists() {
@@ -212,11 +212,11 @@ List<Urunler> urunlist;
         return bedendao;
     }
 
-//    public PhotosDao getPhdao() {
-//        if(this.phdao==null)
-//            this.phdao=new PhotosDao();
-//        return phdao;
-//    }
+    public PhotosDao getPhdao() {
+        if(this.phdao==null)
+            this.phdao=new PhotosDao();
+        return phdao;
+    }
 
     public KategoriDao getKatdao() {
         if(this.katdao==null)
